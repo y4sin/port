@@ -2,3 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+  
+  .carousel {
+    width: 80%; /* Adjust the width as needed */
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    height: 200px;
+  }
+  
+  .logos {
+    display: flex;
+    animation: scrollAnimation 30s linear infinite;
+    gap: 10rem;
+
+  }
+  
+  .logo {
+    flex: 0 0 auto;
+    width: 100px;
+    height: 1000px;
+    text-align: end;
+    line-height: 100px;
+  }
+  
+  @keyframes scrollAnimation {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+
+  
