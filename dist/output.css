@@ -534,12 +534,20 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.m-16 {
-  margin: 4rem;
+.fixed {
+  position: fixed;
 }
 
-.m-3 {
-  margin: 0.75rem;
+.left-0 {
+  left: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.m-16 {
+  margin: 4rem;
 }
 
 .m-4 {
@@ -598,20 +606,32 @@ video {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-\[30rem\] {
   height: 30rem;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .w-\[30rem\] {
   width: 30rem;
 }
 
-.w-\[34rem\] {
-  width: 34rem;
-}
-
 .w-\[350px\] {
   width: 350px;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .transform {
@@ -624,6 +644,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -656,6 +680,10 @@ video {
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .border {
@@ -700,8 +728,16 @@ video {
   background-color: rgb(23 23 23 / var(--tw-bg-opacity));
 }
 
+.bg-opacity-90 {
+  --tw-bg-opacity: 0.9;
+}
+
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .p-5 {
@@ -720,6 +756,11 @@ video {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .text-center {
@@ -748,6 +789,11 @@ video {
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-lg {
@@ -860,6 +906,46 @@ video {
   }
 }
 
+.btn{
+  box-shadow: 4px 4px 14px 0px #050505, -4px -4px 14px 0px #313533, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.hidden {
+  display: none;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  padding-top: 60px;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu li {
+  padding: 15px;
+  text-align: center;
+  color: #27AE60;
+  cursor: pointer;
+  transition: 0.4s;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.menu li:hover {
+  background-color: #555;
+}
+
 .placeholder\:font-semibold::-moz-placeholder {
   font-weight: 600;
 }
@@ -904,6 +990,14 @@ video {
   color: rgb(39 174 96 / var(--tw-text-opacity));
 }
 
+.focus\:rounded-xl:focus {
+  border-radius: 0.75rem;
+}
+
+.focus\:border-none:focus {
+  border-style: none;
+}
+
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -913,9 +1007,162 @@ video {
   outline-style: solid;
 }
 
+.focus\:outline-1:focus {
+  outline-width: 1px;
+}
+
 .focus\:outline-\[\#27AE60\]:focus {
   outline-color: #27AE60;
 }
-  
 
-  
+@media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .se\:m-0 {
+    margin: 0px;
+  }
+
+  .se\:w-20 {
+    width: 5rem;
+  }
+}
+
+@media (max-width: 920px) {
+  .ipad\:h-\[20rem\] {
+    height: 20rem;
+  }
+
+  .ipad\:w-\[20rem\] {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .ipadm\:mx-5 {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
+  .ipadm\:mb-12 {
+    margin-bottom: 3rem;
+  }
+
+  .ipadm\:flex {
+    display: flex;
+  }
+
+  .ipadm\:h-40 {
+    height: 10rem;
+  }
+
+  .ipadm\:w-40 {
+    width: 10rem;
+  }
+
+  .ipadm\:flex-col-reverse {
+    flex-direction: column-reverse;
+  }
+
+  .ipadm\:justify-center {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .uni\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .uni\:mx-4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .uni\:my-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .uni\:mt-8 {
+    margin-top: 2rem;
+  }
+
+  .uni\:block {
+    display: block;
+  }
+
+  .uni\:grid {
+    display: grid;
+  }
+
+  .uni\:hidden {
+    display: none;
+  }
+
+  .uni\:w-10 {
+    width: 2.5rem;
+  }
+
+  .uni\:w-64 {
+    width: 16rem;
+  }
+
+  .uni\:w-\[300px\] {
+    width: 300px;
+  }
+
+  .uni\:w-full {
+    width: 100%;
+  }
+
+  .uni\:flex-col-reverse {
+    flex-direction: column-reverse;
+  }
+
+  .uni\:gap-8 {
+    gap: 2rem;
+  }
+
+  .uni\:p-4 {
+    padding: 1rem;
+  }
+
+  .uni\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .uni\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .uni\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .uni\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}

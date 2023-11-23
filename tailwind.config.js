@@ -11,6 +11,14 @@ module.exports = {
       },
       colors:{
         'bg_black': ' #171717',
+      },
+      screens:{
+        'se':{'max': '480px'},
+        'pc':{'min': '1580px'},
+        'ipad':{'max': '920px'},
+        'ipadm':{'max': '640px'},
+        'uni':{'max': '800px'},
+
       }
     },
   },
